@@ -420,12 +420,6 @@ def load_inputs(csv_fp: str, json_fp: str):
     csv_file = Path(csv_fp)
     json_file = Path(json_fp)
 
-    # Debug: show what paths we're looking for
-    st.write(f"Looking for CSV at: {csv_file.absolute()}")
-    st.write(f"CSV exists: {csv_file.exists()}")
-    st.write(f"Looking for JSON at: {json_file.absolute()}")
-    st.write(f"JSON exists: {json_file.exists()}")
-
     if not csv_file.exists():
         raise FileNotFoundError(f"CSV not found: {csv_file}")
     if not json_file.exists():
