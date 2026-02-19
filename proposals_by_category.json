@@ -1,0 +1,176 @@
+{
+  "Economic Mobility and Growth": [
+    {
+      "id": 1,
+      "title": "Create incentives for community colleges, employers, unions and other providers to constantly improve programs that train workers for higher paying jobs, especially in fast-growing industries"
+    },
+    {
+      "id": 2,
+      "title": "Reduce regulations that restrict construction of new affordable housing and infrastructure"
+    },
+    {
+      "id": 3,
+      "title": "Support rural and low-income urban areas with education, training, universal broadband access, and investment incentives to promote entrepreneurship and job creation"
+    },
+    {
+      "id": 3.1,
+      "title": "Establish an independent agency to evaluate how each Artificial Intelligence initiative is promoting overall progress for ordinary Americans, such as improvements in skills, health, jobs and job quality"
+    },
+    {
+      "id": 4,
+      "title": "Expand earning subsidies for low-wage workers with children"
+    },
+    {
+      "id": 6,
+      "title": "Support workers\u2019 rights to form, join and contribute to unions – and their rights not to"
+    },
+    {
+      "id": 7,
+      "title": "Boost federal spending on basic research, and improve the pipeline from publicly funded research to commercialization"
+    }
+  ],
+  "Energy Policy": [
+    {
+      "id": 26,
+      "title": "Repeal energy subsidies, regulations and legislation whose costs exceed the benefits"
+    },
+    {
+      "id": 27,
+      "title": "Place a price on carbon emissions of at least $51 per ton. And cut income taxes accordingly on low-income and rural families"
+    },
+    {
+      "id": 28,
+      "title": "To level the playing field with countries that do not put a price on carbon emissions, create a $51 per ton tariff on their products"
+    },
+    {
+      "id": 30,
+      "title": "To reduce methane emissions, support reuse technologies and hold current and former owners of abandoned fossil fuel wells liable for capping those wells"
+    },
+    {
+      "id": 32,
+      "title": "To move energy across state lines efficiently, increase Federal agencies’ authority to plan and issue permits for energy infrastructure, including transmission lines"
+    }
+    
+  ],
+  "Federal Spending & Debt": [
+    {
+  "id": 33,
+  "title": "To potentially save another $100 billion a year, invite former Secretaries of Defense from both parties to develop a plan for simultaneously increasing defense preparedness while cutting costs – and require Congress to vote the plan up-or-down"
+}
+  ],
+  "Healthcare": [
+    {
+      "id": 1724,
+      "title": "Expand support for overall community health, especially in areas where providers lack incentives to go – rural and distressed communities"
+    },
+    {
+      "id": 18,
+      "title": "Coordinate public education and increase funding for healthier lifestyles, nutrition and prevention, especially about obesity."
+    },
+    {
+      "id": 19,
+      "title": "Require each Medicare and Medicaid plan to - measurably - reduce costs and improve their patients’ health outcomes. And stop paying providers for each test and procedure they perform"
+    },
+    {
+      "id": 20,
+      "title": "Support public and private providers that focus on producing the best health outcomes at the lowest cost (such as Kaiser Permanente)"
+    },
+    {
+      "id": 22,
+      "title": "Expand free meals to low-income schools year round to ensure that poor children have access to nutritious foods"
+    },
+    {
+      "id": 23,
+      "title": "Prevent any business from buying up a monopoly of health care providers in any region"
+    },
+    {
+      "id": 25,
+      "title": "Expand federal price negotiations to manage the cost of pharmaceuticals and prescription drugs"
+    }
+  ],
+  "K-12 Education": [
+    {
+      "id": 8,
+      "title": "Revise educational goals and standards to include both academic and life skills, such as teamwork and resilience"
+    },
+    {
+      "id": 9,
+      "title": "Reform teacher training and professional development to boost teachers\u2019 performance"
+    },
+    {
+      "id": 10,
+      "title": "Hold teachers and schools to account for students’ progress"
+    },
+    {
+      "id": 11,
+      "title": "Significantly increase pay for more effective teachers"
+    },
+    {
+      "id": 111,
+      "title": "Promote more instruction time, high expectations, frequent teacher feedback, tailoring instruction to students’ performance & tutoring as needed"
+    },
+    {
+      "id": 12,
+      "title": "Develop programs to increase lower income parents\u2019 support for their children\u2019s learning"
+    },
+    {
+      "id": 13,
+      "title": "Expand families’ opportunities to choose among public and charter schools"
+    },
+    {
+      "id": 14,
+      "title": "Increase per-student support for under-resourced schools"
+    },
+    {
+      "id": 16,
+      "title": "Help state and local education agencies build up their evaluation and research capabilities"
+    }
+  ],
+  "Taxes": [
+    {
+      "id": 39,
+      "title": "Sharply reduce deductions, exclusions and credits that mostly help high-income families"
+    },
+    {
+      "id": 43,
+      "title": "To encourage investment, allow businesses to deduct all expenses, including capital assets, but excluding interest, in the year paid"
+    },
+    {
+      "id": 41,
+      "title": "To reduce evasion and promote exports, place a 6% value added tax (VAT) on goods and services at each point in the supply chain -- and rebate the amount to low-income consumers"
+    },
+    {
+      "id": 47,
+      "title": "Boost Social Security’s cost-effectiveness by raising benefits for low earners, while slowing growth of benefits for high earners, and raise the retirement age for those who can still work"
+    },
+    {
+      "id": 44,
+      "title": "End taxation distinctions between corporate and non-corporate businesses"
+    },
+    {
+      "id": 45,
+      "title": "Tax the gains on capital assets when they are inherited, ending the ability to avoid such taxes"
+    },
+    {
+      "id": 46,
+      "title": "Lower the size of estates exempt from tax (currently $27 million per couple)"
+    }
+  ],
+  "Congressional Reform": [
+    {
+      "id": 50,
+      "title": "Enact legislation to prohibit either party from drawing congressional districts to boost its odds winning elections"
+    },
+    {
+      "id": 49,
+      "title": "Enact legislation to open up primaries, so that every voter has a voice, and candidates across the spectrum compete on a level playing field"
+    },
+    {
+  "id": 48,
+  "title": "Replace congressional committees divided along partisan lines with task forces designed to resolve problems by:\n\n  - Asking each group of lawmakers who share priorities on the task force's topic to choose a spokesperson\n\n   - Any spokesperson who wanted to advance their group's priorities would need to hash out differences with the others\n\n   - If the spokespeople reach an agreement, each could pitch it to their colleagues\n\n"
+}
+    
+
+  ]
+
+}
