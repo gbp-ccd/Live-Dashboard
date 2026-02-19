@@ -552,6 +552,18 @@ with tab_overview:
 
         st.divider()
 
+        # reflection_q2 true/false percentages
+        if q2_known > 0:
+            st.subheader("Reflection Q2: True vs False")
+            q2_true_pct = (q2_true / q2_known) * 100
+            q2_false_pct = (q2_false / q2_known) * 100
+            
+            col1, col2 = st.columns(2)
+            col1.metric("True", f"{q2_true:,}", f"{q2_true_pct:.1f}%")
+            col2.metric("False", f"{q2_false:,}", f"{q2_false_pct:.1f}%")
+            
+            st.divider()
+
         # reflection_q2 true/false by mode
         q2_filtered = sess_mode[sess_mode["reflection_q2_value"].notna()]
         q2_filtered = clean_df(q2_filtered)
@@ -575,8 +587,33 @@ with tab_overview:
             .reset_index(drop=True)
         )
         if not q2_by_mode.empty:
+            # Calculate percentages by mode
             q2_by_mode["reflection_q2_value"] = q2_by_mode["reflection_q2_value"].map({True: "True", False: "False"}).values
-            fig = px.bar(q2_by_mode, x="rating_mode", y="n", color="reflection_q2_value", barmode="stack")
+            
+            # Add percentage calculations
+            mode_totals = q2_by_mode.groupby("rating_mode")["n"].sum()
+            q2_by_mode["pct"] = q2_by_mode.apply(
+                lambda row: (row["n"] / mode_totals[row["rating_mode"]]) * 100, axis=1
+            )
+            
+            st.subheader("Reflection Q2: True vs False by Mode")
+            
+            # Display percentages in a table
+            display_df = q2_by_mode.copy()
+            display_df["Count"] = display_df["n"]
+            display_df["Percentage"] = display_df["pct"].map(lambda x: f"{x:.1f}%")
+            display_df = display_df[["rating_mode", "reflection_q2_value", "Count", "Percentage"]]
+            display_df = display_df.rename(columns={
+                "rating_mode": "Mode",
+                "reflection_q2_value": "Q2 Value"
+            })
+            st.dataframe(display_df, use_container_width=True, hide_index=True)
+            
+            # Chart
+            fig = px.bar(q2_by_mode, x="rating_mode", y="n", color="reflection_q2_value", barmode="stack",
+                        text=q2_by_mode["pct"].map(lambda x: f"{x:.1f}%"),
+                        labels={"rating_mode": "Rating Mode", "n": "Count", "reflection_q2_value": "Q2 Value"})
+            fig.update_traces(textposition="inside")
             st.plotly_chart(fig, use_container_width=True)
 
         # submissions over time (by day)
