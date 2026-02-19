@@ -12,9 +12,10 @@ import streamlit as st
 # -----------------------------
 # Config
 # -----------------------------
-DEFAULT_FOLDER = Path("/Users/davidlevy/downloads/GBP/app/live-dashboard")
-DEFAULT_CSV = DEFAULT_FOLDER / "webapp submisssions.csv"
-DEFAULT_PROPOSALS_JSON = DEFAULT_FOLDER / "proposals_by_category.json"
+# Use relative paths from the script location for Streamlit Cloud compatibility
+SCRIPT_DIR = Path(__file__).parent
+DEFAULT_CSV = SCRIPT_DIR / "webapp submisssions.csv"
+DEFAULT_PROPOSALS_JSON = SCRIPT_DIR / "proposals_by_category.json"
 
 BUCKET_SUPPORT = {"Critical to Me & Others", "Good Idea"}
 BUCKET_UNSURE = {"Not Sure"}
@@ -418,6 +419,12 @@ with st.sidebar:
 def load_inputs(csv_fp: str, json_fp: str):
     csv_file = Path(csv_fp)
     json_file = Path(json_fp)
+
+    # Debug: show what paths we're looking for
+    st.write(f"Looking for CSV at: {csv_file.absolute()}")
+    st.write(f"CSV exists: {csv_file.exists()}")
+    st.write(f"Looking for JSON at: {json_file.absolute()}")
+    st.write(f"JSON exists: {json_file.exists()}")
 
     if not csv_file.exists():
         raise FileNotFoundError(f"CSV not found: {csv_file}")
